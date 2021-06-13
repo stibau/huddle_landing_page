@@ -1,0 +1,100 @@
+/* Some global variables */
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);   
+    --white: hsl(0,0%,100%);   
+    --grey: #333333;
+}
+
+/* global styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    size: 100%;
+    background-color: var(--violet);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat; 
+    padding: 10px 35px ; 
+     
+}
+@media screen and (min-width: 500px){
+    body{
+        background-image: url("../images/bg-desktop.svg");
+        padding: 35px 80px ; 
+    }    
+}
+
+.logo{
+    width: 128px;
+    padding: 25px 0;
+}
+@media screen and (min-width: 500px){
+    .logo{width: 770px;
+        width: 215px;
+        padding: 25px 0;
+    }
+} 
+
+.main{
+    padding: 30px 0;
+}
+@media screen and (min-width: 500px){
+    .main{
+        display:flex;   
+        justify-content: flex-start;   
+        padding: 50px 0;       
+    }
+}
+
+.illustration{
+    width: 300px;
+}
+@media screen and (min-width: 500px){
+    .illustration{
+        width: 695px; 
+    }
+}
+
+.explanation{
+      
+    padding: 45px 55px;
+    color: var(--white);         
+}
+
+.explanation > h1{    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2.5em;   
+}
+
+.explanation > p {
+    font-family: "Open Sans";
+    font-weight: 400;   
+    padding: 20px 0;
+    line-height: 1.5;
+    
+}
+
+.explanation > .btn {    
+    box-shadow: 5px 5px 10px var(--grey);
+    border-radius: 30px;
+    font-family: "Poppins";
+    color: var(--violet);
+    font-size: 1em;
+    background: var(--white);
+    padding: 15px 55px 15px 55px;
+    text-decoration: none;
+    border: none;
+    }
+    
+ .explanation >  .btn:hover {
+    background: var(--soft-magenta);
+    text-decoration: none;
+    }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
